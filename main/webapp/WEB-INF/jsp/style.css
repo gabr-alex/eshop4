@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Mansalva&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Dancing Script';
+
+  color: #777;
+}
+
+.text-danger{
+  font-family: 'Dancing Script';
+}
+
+#section-one{
+  margin: 20px;
+}
+
+
+header{
+  font-family: 'Mansalva';
+}
+h2,h3,h4 {
+  color: #222;
+}
+.resize {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 800px;
+     height: auto;
+ }
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+.conteiner {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bounce {
+  transform-origin: center bottom;
+  animation: bounce 2s infinite;
+}

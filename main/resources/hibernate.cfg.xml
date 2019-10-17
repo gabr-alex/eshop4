@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+
+        <property name="hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+        <property name="hibernate.connection.url">
+            jdbc:postgresql://localhost/eshop4
+        </property>
+        <property name="hibernate.connection.username">
+            postgres
+        </property>
+        <property name="hibernate.connection.password">
+            eronas777
+        </property>
+
+        <!-- <mapping resource="Darbuotojas.hbm.xml" /> -->
+        <mapping class="eshop.domain.Order"/>
+
+        <!--        <mapping class="hibernate.Pastas" />-->
+    </session-factory>
+
+</hibernate-configuration>
